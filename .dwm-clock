@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while true
+do
+   xsetroot -name "[`date +"%a %b %d %I:%M %p"`]"
+   sleep 1    # Update time every second
+done

@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ -f $HOME/.Xdefaults ]; then
+  xrdb -merge $HOME/.Xdefaults
+fi
+
+qiv -z $HOME/etc/wallpaper.png
+
+bash $HOME/.dwm-clock&
+dwm_clock_pid=$!
+
+DISPLAY=:0.0 $HOME/bin/dwm
+
+kill $dwm_clock_pid
