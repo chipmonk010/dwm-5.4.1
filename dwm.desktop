@@ -2,6 +2,6 @@
 Encoding=UTF-8
 Name=Dwm
 Comment=Dynamic window manager
-Exec=/home/chris/.xsession
+Exec=/usr/local/dwm/dwm-session
 Icon=dwm.png
 Type=Application
